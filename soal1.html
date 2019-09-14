@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal Nomor 1</title>
+</head>
+
+<body>
+    <p>Fungsi dengan return JSON</p>
+</body>
+<script>
+    function myBiodata() {
+        let biodata = {};
+        biodata.name = "Awal Prasetyo";
+        biodata.age = 26;
+        biodata.address = `Desa Tambak Boyo RT 03 RW 01, Kelurahan Tambak Boyo, Kecamatan Ambarawa, Kabupaten Semarang, Provinsi Jawa Tengah`;
+        biodata.hobbies = ["go wes", "nonton tv", "baca buku", "otak atik leptop", "jogging"];
+        biodata.is_married = false;
+        biodata.list_school = [{
+            name: {
+                sma: "SMA Negeri 1 Ambarawa",
+                universitas: "Universitas Diponegoro"
+            },
+            year_in: {
+                sma: 2008,
+                universitas: 2011
+            },
+            year_out: {
+                sma: 2011,
+                universitas: 2018
+            },
+            major: {
+                sma: "IPA",
+                universitas: "Matematika"
+            }
+        }];
+        biodata.skills = [{
+            skill_name: {
+                html: true,
+                css: true,
+                javascript: true,
+                php: true,
+                mysql: true,
+                jquery: true,
+                codeigniter: true,
+                bootstrap: true
+            },
+            level: {
+                html: 'advanced',
+                css: 'advanced',
+                javascript: 'beginner',
+                php: 'advanced',
+                mysql: 'beginner',
+                jquery: 'advanced',
+                codeigniter: 'beginner',
+                bootstrap: 'advanced'
+            }
+        }];
+        biodata.interest_in_coding = true;
+        return JSON.stringify(biodata);
+    }
+    myBiodata();
+    alert(myBiodata());
+    console.log(myBiodata());
+</script>
+
+</html>
