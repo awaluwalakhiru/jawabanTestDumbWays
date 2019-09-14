@@ -25,7 +25,7 @@ $kueri = mysqli_query($conn, $query);
         <div class="card-header">
             Aplikasi Quick Count
         </div>
-        <div class="card-body">
+        <div class="card-body mb-sm-5">
             <?php while ($data = mysqli_fetch_assoc($kueri)) : ?>
                 <div class="card mb-3">
                     <div class="row no-gutters">
@@ -39,7 +39,7 @@ $kueri = mysqli_query($conn, $query);
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 pt-5">
+                        <div class="col-md-4 col-sm-12 pt-md-5 pb-sm-3">
                             <button class="btn btn-primary" id="tambah" data-id="<?= $data['id']; ?>">Tombol Tambah</button>
                         </div>
                     </div>
