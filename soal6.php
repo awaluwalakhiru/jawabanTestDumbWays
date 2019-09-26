@@ -1,9 +1,13 @@
 <?php
 
-$k = 1;
-for ($i = 0; $i < 4; $i++) {
-    for ($j = 0; $j <= $i; $j++) {
-        echo $k . " ";
+$k = 2;
+for ($i = 1; $i <= 4; $i++) {
+    for ($j = 1; $j <= $i; $j++) {
+        if ($k%$i==0) {
+			echo "";;        	
+        }else{
+        	echo $k . " ";
+        }
         $k++;
     }
     echo "<br>";

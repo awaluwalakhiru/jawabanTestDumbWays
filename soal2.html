@@ -14,17 +14,17 @@
             var regex = /^[a-zA-Z0-9]{5,9}$/;
             return regex.test(params);
         }
-        let params = '@Najibb';
-        // let params = 'Ayu99v';
+        // let params = '@Najibb';
+        let params = 'Ayu99v';
         if (valid_username(params) === true) {
             alert('Username ' + params + ' diperbolehkan {return true}');
         } else {
             alert('Username ' + params + ' tidak diijinkan {return false}');
         }
-        // let pass = 'p@ssW0rd#';
-        let pass = 'DumbW4ysDev99!#';
+        let pass = 'p@ssW0rd#';
+        // let pass = 'DumbW4ysDev99!#';
         function valid_password(pass) {
-            var regex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%])(?=.*[@]).{8,}$/;
+            var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%])(?=.*[@]).{8,}$/;
             return regex.test(pass);
         }
         if (valid_password(pass) === true) {

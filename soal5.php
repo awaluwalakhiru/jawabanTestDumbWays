@@ -1,14 +1,13 @@
 <?php
 $x = 10;
+// loop baris
 for ($i = 1; $i <= $x; $i++) {
-    for ($j = 1; $j <= $i; $j++) {
-        if ($i == $j && $j == $i) {
-            if ($i == $j) {
-                echo "*";
-                $i++;
-            }
-            echo "";
+    // loop kolom
+    for ($j = $x; $j>= $i; $j--) {
+        if ($i == $j) {
+            echo "*<br>";
+        } else {
+            echo "=";
         }
-        echo "<br/>";
     }
 }

@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', 'root', 'app_quick_count');
+$conn = mysqli_connect('localhost', 'root', '', 'app_quick_count');
 $query = "SELECT * FROM candidates";
 $kueri = mysqli_query($conn, $query);
 ?>
